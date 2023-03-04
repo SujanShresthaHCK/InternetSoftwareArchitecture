@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/137-72908.jpg);
+    background-repeat: no-repeat;  
+    background-size:cover;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    
+    
+}  
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    font-weight:900;
+}
+.navbar ul li a:hover{
+    color: green;
+    transition: 0.5s;
+}
+.navbar img{
+    width: 65px;
+    height: 65px;
+    
+}
+.welcome{
+    padding-left:250px;
+    font-weight: 900;
+}
+.more{
+    display: flex;
+    flex-direction: row;
+}
+.more .half{
+    width: 50%;
+}
+.more .halfII{
+    width: 50%;
+}
+.more .halfII img{
+    width: 90%;
+}
+.more p{
+    padding: 20px;
+    font-size: 25px;
+}
+button{
+    border: 2px solid black;
+    border-radius:25px ;
+    padding: 8px;
+    margin-top: 20px;
+    margin-left:70px ;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.topbar{
+    height: 30px;
+    background-color: #c1c1c1c1;
+    padding-left:110px ;
+    padding-top:3px ;
+}
+.Menu{
+    padding-top: 50px;
+}
+.Menu h1{
+    padding-left: 300px;
+}
+.Menu h2{
+    padding-left: 300px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.main-img{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.img img{
+    height: 150px;
+    border-radius: 100px;
+}
+.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 350px;
+}
+.img h1{
+    padding-left:10px;
+}
+.imgII{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.imgII img{
+    height: 150px;
+    border-radius: 100px;
+}
+.imgII h1{
+    padding-left:10px;
+}
+.Orderlist{
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 450px;
+    width: 450px;
+    background-color:white;
+    border-radius: 50px;
+}
+form{
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.Orderlist .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top:10px ;
+}
+.Orderlist .inputbox input,.contactform, .inputbox textarea{
+    width: 90%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border: 2px solid #FAF9F6;
+    outline: none;
+    resize: none;
+    background-color: #FAF9F6;
+}
+.Orderlist .inputbox span{
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.Orderlist .inputbox input:focus ~ span, 
+.Orderlist .inputbox input:valid ~ span,
+.Orderlist .inputbox textarea:focus ~ span, 
+.Orderlist .inputbox textarea:valid ~ span{
+    color: black;
+    font-size: 12px;
+    transform: translateY(-24px);
+}
+.Orderlist .inputbox input[type="submit"]{
+    width: 90%;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 25px;
+}
